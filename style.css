@@ -12,8 +12,7 @@ body {
 
 /* Navbar Section */
 nav {
-    background-color: #000;
-    color: #fff;
+    color: #000;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -40,11 +39,11 @@ nav {
 .logo img {
     width: 40px;
     height: 40px;
-    filter: invert(1);
     transition: transform 0.3s ease;
 }
 
 .logo h1 {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -71,7 +70,7 @@ nav {
 
 .navbar a {
     position: relative;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
@@ -98,17 +97,28 @@ nav {
 
 .enroll-btn a {
     display: inline-block;
-    background-color: #f0c040;
-    color: #000;
-    padding: 0.6rem 1.2rem;
-    border-radius: 25px;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .enroll-btn a:hover {
-    background-color: #d9a830;
+    background-color: #4196eb;
     transform: scale(1.1);
 }
 
+/* Main Section */
+.hero-section {
+    max-width: 1400px;
+    width: 90%;
+    height: 500px;
+    background-color: #1e90ff;
+    margin: 2rem auto;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+}
