@@ -150,7 +150,7 @@ nav {
 }
 
 .hero-btn2:hover {
-  background-color: rgba(30, 144, 255, 0.15);
+  background-color: rgb(69, 159, 248);
 }
 
 .youtube {
@@ -261,6 +261,8 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  text-align: justify;
+  gap: 10px;
 }
 
 .card-btn {
@@ -294,6 +296,12 @@ nav {
   border-radius: 10px;
   width: 260px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in, border;
+}
+
+.instructor-card:hover {
+  transform: scale(1.1);
+  border: 1px solid grey;
 }
 
 .instructor-card img {
@@ -518,4 +526,202 @@ nav {
   font-size: 0.9rem;
   border-top: 1px solid rgba(255,255,255,0.3);
   padding-top: 1rem;
+}
+
+/* Responsive */
+/* Small devices (mobile portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .hero-content, .hero-img {
+    max-width: 100%;
+  }
+
+  .hero-img img {
+    width: 80%;
+    margin: 1rem auto 0;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .course-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instructor-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-image img {
+    max-width: 80%;
+    margin: 1rem auto 0;
+  }
+}
+
+/* Medium devices (tablet landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    flex-direction: row;
+    padding: 2.5rem;
+  }
+
+  .hero-content {
+    max-width: 60%;
+  }
+
+  .hero-img img {
+    width: 60%;
+  }
+
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-img img {
+    width: 60%;
+  }
+
+  .course-card-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .instructor-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-image img {
+    max-width: 60%;
+  }
+}
+
+/* Large devices (desktop) */
+@media (min-width: 1025px) {
+  .hero-section {
+    flex-direction: row;
+    padding: 3rem;
+  }
+
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero-img img {
+    width: 380px;
+  }
+
+  .about-container {
+    flex-direction: row;
+  }
+
+  .about-img img {
+    width: 400px;
+  }
+
+  .course-card-container {
+    flex-wrap: nowrap;
+  }
+
+  .instructor-container {
+    flex-wrap: nowrap;
+  }
+
+  .contact-container {
+    flex-direction: row;
+  }
+
+  .contact-image img {
+    max-width: 400px;
+  }
+}
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon for mobile */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 60px; /* adjust based on navbar height */
+    left: 0;
+    padding: 1rem 0;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .enroll-btn {
+    margin-top: 0.5rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Checkbox hack: show menu when checked */
+  #menu-toggle:checked + .hamburger + .navbar {
+    display: flex;
+  }
+}
+
+/* Tablet / Desktop */
+@media (min-width: 769px) {
+  .navbar {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    width: auto;
+    text-align: left;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .enroll-btn {
+    margin-top: 0;
+  }
 }
