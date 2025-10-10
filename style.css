@@ -301,7 +301,7 @@ nav {
 
 .instructor-card:hover {
   transform: scale(1.1);
-  border: 1px solid grey;
+  border: 1px solid #d5d1d1;
 }
 
 .instructor-card img {
