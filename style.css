@@ -530,7 +530,7 @@ nav {
 
 /* Responsive */
 /* Small devices (mobile portrait) */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 440px) and (max-width: 768px) {
   .hero-section {
     flex-direction: column;
     padding: 2rem;
