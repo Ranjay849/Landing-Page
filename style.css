@@ -180,6 +180,13 @@ nav {
   margin-bottom: 1rem;
 }
 
+.lineAbout {
+    width: 100px;
+    height: 5px;
+    background-color: rgb(255, 191, 0);
+    margin-bottom: 15px;
+}
+
 .about-text p {
   margin-bottom: 1rem;
   line-height: 1.6;
@@ -190,12 +197,53 @@ nav {
   border-radius: 10px;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+
+.icon-container p {
+  text-align: center;
+}
+
+.icon-container .bold {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.icon-container .gray {
+  color: gray;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.icon-container img {
+  height: 50px;
+  width: 50px;
+}
+
 /* Courses Section */
 .courses {
   max-width: 1200px;
   margin: 4rem auto;
   text-align: center;
   padding: 0 1rem;
+}
+
+.line-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.lineCourse {
+    width: 100px;
+    height: 5px;
+    background-color: rgb(255, 191, 0);
+    margin-bottom: 15px;
 }
 
 .course-card-container {
